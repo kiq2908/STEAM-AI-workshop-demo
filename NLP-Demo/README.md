@@ -12,8 +12,14 @@
 1. Cài đặt thư viện `transformers` và `torch` bằng cách chạy lệnh sau trong terminal:
 
 ```
-pip install transformers
-pip install torch
+pip install transformers==4.30.2
+pip install torch==2.0.1
+```
+
+Hoặc
+
+```
+pip install -r requirements.txt
 ```
 
 ## Giải thích
