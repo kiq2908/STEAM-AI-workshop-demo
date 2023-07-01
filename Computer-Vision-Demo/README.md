@@ -12,8 +12,14 @@ Chương trình này sử dụng thư viện `cvzone.HandTrackingModule` và `Op
 1. Cài đặt `cvzone` và `OpenCV` bằng cách chạy các lệnh sau trong terminal:
 
 ```
-pip install cvzone
-pip install opencv-python
+pip install opencv-python==4.7.0.72
+pip install cvzone==1.5.6
+```
+
+Hoặc
+
+```
+pip install -r requirements.txt
 ```
 
 ## Giải thích:

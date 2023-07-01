@@ -1,3 +1,6 @@
+import transformers
+transformers.logging.set_verbosity_error()
+
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 
@@ -27,6 +30,6 @@ for step in range(5):
         temperature=0.75,
         pad_token_id=tokenizer.eos_token_id
     )
-    #print the output
+    # print the output
     output = tokenizer.decode(chat_history_ids[:, bot_input_ids.shape[-1]:][0], skip_special_tokens=True)
     print(f"DialoGPT: {output}")
