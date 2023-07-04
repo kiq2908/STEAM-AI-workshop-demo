@@ -28,7 +28,12 @@ while True: #tạo một vòng lặp vô hạn để chưởng trình chạy li�
             # cv2.putText là hàm để hiển thị text lên khung hình
             # img là khung hình ngay tại thời điểm xử lý và cần hiển thị text
             # string display_text lên khung hình img tại tọa độ (bbox[0], bbox[1] - 20) là điểm góc trên bên trái của bb với font chữ cv2.FONT_HERSHEY_SIMPLEX, kích thước font 1, màu trắng (255, 255, 255), độ đậm 2
-
+            #print(lmList)
+            #print(bbox)
+            #print(centerPoint)
+            #print(handType)
+            #print(fingers)
+            #print(finger_count)
     cv2.imshow("Image", img)
     # Hiển thị khung hình img lên cửa sổ có tên "Image", giống như hiện cửa sổ của một chương trình khác
     if cv2.waitKey(1) == ord('q'):
