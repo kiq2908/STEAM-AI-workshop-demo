@@ -3,7 +3,7 @@ from cvzone.HandTrackingModule import HandDetector
 import cv2
 #import thư viện OpenCV cho các công việc xử lý computer vision
 
-cap = cv2.VideoCapture(0) #tính năng sử dụng nhận diện trên video thời gian thực của OpenCV
+cap = cv2.VideoCapture(0) #sử dụng camera mặc định của máy cho chương trình
 detector = HandDetector(detectionCon=0.8, maxHands=2)
 #cài đặt độ chính xác (nếu độ chính xác vượt trên 80% thì chương trình sẽ nhận biết được đó là bàn tay) và số lượng bàn tay cần phát hiện (2 bàn tay)
 
